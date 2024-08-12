@@ -14,12 +14,12 @@
 <body>
  <h1>Crack Down Dom</h1> 
  <ul>
-    <li>Crack down</li>
+    <li id="text-white">Crack down</li>
     <li>Crack CSS</li>
     <li>Crack JS</li>
  </ul>
 
- <ol>
+ <ol class="text-center">
     <li>Crack down</li>
     <li>Crack CSS</li>
     <li>Crack JS</li>
@@ -29,8 +29,40 @@
 
  <script>
     // option 1
+    const liCollection = document.getElementsByTagName('li')
+   for (const a of liCollection) {
+    a.style.backgroundColor = 'red'
+    a.style.padding = '20px'
+    a.style.margin = '20px'
+    a.style.color = 'white'
+   }
+    
+    // option 2
+    const li = document.getElementById('text-white').innerText ='hi boys'
+    /* console.log(li); */
+   
+    // option 3
+    /* const liCollections = document.getElementsByClassName('text-center')[1].innerHTML
+    console.log(liCollections); */
+
+    // option 4
+
+    /* const liCollection1 = document.querySelectorAll('.text-center li')
+    console.log(liCollection1); */
+
+     // option 5
+
+     /* const liCollection2 = document.querySelector('.text-center')
+     console.log(liCollection2); */
+     
+     
 
     
+
+    
+    
+
+
  </script>
 </body>
 </html>
